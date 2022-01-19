@@ -1,0 +1,146 @@
+@import './colors.scss';
+@import'./mixin.scss';
+@import'./fonts.scss';
+@import './media.scss';
+
+:root {
+    font-size: 16px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    nav {
+        @include width(100%);
+        @include box-shadow-nav;
+
+        .first-link {
+            @include nav-links;
+            @include margin(0, 0, 0, 0);
+            font-size: 2rem;
+            @include transition(.1s);
+        }
+
+        .first-link:hover {
+            color: $color-yellow;
+        }
+
+        .link-nav {
+            @include nav-links;
+            @include transition(.1s);
+        }
+
+        .link-nav:hover {
+            color: $color-yellow;
+        }
+
+        .nav-input {
+            @include border(3px, solid, $nav-color-link);
+            @include outline(0, 0, 0);
+            @include padding(.5rem, .5rem, .5rem, .5rem);
+            @include border-radius(15rem);
+        }
+
+        .nav-btn {
+            @extend .nav-input;
+            @include padding(0, 1rem, 0, 1rem);
+            @include margin(0, 0, 0, -3rem);
+            background-color: $nav-color-link;
+            @include transition(.3s);
+            color: $color-yellow;
+        }
+
+        .nav-btn:hover {
+            transform: translateX(-2.5rem);
+        }
+    }
+
+    .sec-1 {
+        @include display(flex, flex-start, space-between);
+        @include margin(2rem, 0, 0, 0);
+
+        .carrousel {
+            @include width(40vw);
+        }
+
+        .text-header {
+            @include margin(3rem, 0, 0, 0);
+            @include text-align(center, 0, 0);
+
+            img {
+                @include width(15rem);
+            }
+        }
+
+        .mycard {
+            background-color: $card-color-2;
+            @include margin(1rem, 0, 0, 0);
+            background-image: url(/img/3.png);
+            background-size: cover;
+        }
+
+        .mycard:nth-child(odd) {
+            background-color: $card-color;
+            background-image: url(/img/2.png);
+            background-size: cover;
+        }
+
+        .mycard:hover {
+            @include transition(.3s);
+            @include box-shadow-card;
+        }
+
+        i {
+            font-size: 4rem;
+            display: block;
+            @include margin(0, 0, 1rem, 0);
+            color: $icon-aside-color-2;
+        }
+    }
+
+    .card {
+        @include margin(2rem, 0, 0, 0);
+    }
+
+    .card:hover {
+        @include transition(.3s);
+        @include box-shadow-card;
+    }
+
+    .crads-flex {
+        @include display(flex, center, center);
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .seemorebtn {
+        display: block;
+    }
+
+    .icons {
+        @include display(flex, center, center);
+        gap: 2rem;
+        @include margin(2rem, 0, 0, 0);
+
+        img {
+            @include width(3rem);
+        }
+    }
+
+    .contact {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.795)), url(/img/2.png);
+        background-size: cover;
+    }
+
+    .btnsub {
+        @include margin(1rem, 0, 0, 0);
+    }
+
+    .footer {
+        background-color: $card-color;
+    }
+}

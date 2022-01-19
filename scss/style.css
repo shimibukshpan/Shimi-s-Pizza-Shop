@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital@1&family=Neonderthaw&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@700&display=swap");
+.first-link {
+  font-family: 'Neonderthaw', cursive;
+}
+
+.text-header h1 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.text-header h2 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 920px) {
+  .carrousel {
+    display: none;
+  }
+  .mycard {
+    width: 100vw;
+  }
+  .text-header {
+    display: none;
+  }
+}
+
+:root {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body nav {
+  width: 100%;
+  -webkit-box-shadow: rgba(252, 249, 105, 0.25) 0px 54px 55px, rgba(228, 224, 33, 0.25) 0px -12px 30px, rgba(245, 237, 10, 0.25) 0px 4px 6px, rgba(250, 234, 17, 0.25) 0px 12px 13px, rgba(160, 157, 2, 0.25) 0px -3px 5px;
+          box-shadow: rgba(252, 249, 105, 0.25) 0px 54px 55px, rgba(228, 224, 33, 0.25) 0px -12px 30px, rgba(245, 237, 10, 0.25) 0px 4px 6px, rgba(250, 234, 17, 0.25) 0px 12px 13px, rgba(160, 157, 2, 0.25) 0px -3px 5px;
+}
+
+body nav .first-link {
+  color: #d60606;
+  margin: 0 3rem;
+  text-decoration: none;
+  font-weight: 500;
+  margin: 0 0 0 0;
+  font-size: 2rem;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+body nav .first-link:hover {
+  color: yellow;
+}
+
+body nav .link-nav {
+  color: #d60606;
+  margin: 0 3rem;
+  text-decoration: none;
+  font-weight: 500;
+  -webkit-transition: all 0.1s ease-in;
+  transition: all 0.1s ease-in;
+}
+
+body nav .link-nav:hover {
+  color: yellow;
+}
+
+body nav .nav-input, body nav .nav-btn {
+  border: 3px solid #d60606;
+  border: 0 0 0;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  border-radius: 15rem;
+}
+
+body nav .nav-btn {
+  padding: 0 1rem 0 1rem;
+  margin: 0 0 0 -3rem;
+  background-color: #d60606;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  color: yellow;
+}
+
+body nav .nav-btn:hover {
+  -webkit-transform: translateX(-2.5rem);
+          transform: translateX(-2.5rem);
+}
+
+body .sec-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 2rem 0 0 0;
+}
+
+body .sec-1 .carrousel {
+  width: 40vw;
+}
+
+body .sec-1 .text-header {
+  margin: 3rem 0 0 0;
+  text-align: center;
+  text-align: 0;
+  text-align: 0;
+}
+
+body .sec-1 .text-header img {
+  width: 15rem;
+}
+
+body .sec-1 .mycard {
+  background-color: #e74444;
+  margin: 1rem 0 0 0;
+  background-image: url(/img/3.png);
+  background-size: cover;
+}
+
+body .sec-1 .mycard:nth-child(odd) {
+  background-color: #eebe2d;
+  background-image: url(/img/2.png);
+  background-size: cover;
+}
+
+body .sec-1 .mycard:hover {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-box-shadow: 0 0 1rem 0 black;
+          box-shadow: 0 0 1rem 0 black;
+}
+
+body .sec-1 i {
+  font-size: 4rem;
+  display: block;
+  margin: 0 0 1rem 0;
+  color: #1d0b58;
+}
+
+body .card {
+  margin: 2rem 0 0 0;
+}
+
+body .card:hover {
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  -webkit-box-shadow: 0 0 1rem 0 black;
+          box-shadow: 0 0 1rem 0 black;
+}
+
+body .crads-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .seemorebtn {
+  display: block;
+}
+
+body .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 2rem;
+  margin: 2rem 0 0 0;
+}
+
+body .icons img {
+  width: 3rem;
+}
+
+body .contact {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.795))), url(/img/2.png);
+  background-image: linear-gradient(rgba(255, 255, 255, 0.795)), url(/img/2.png);
+  background-size: cover;
+}
+
+body .btnsub {
+  margin: 1rem 0 0 0;
+}
+
+body .footer {
+  background-color: #eebe2d;
+}
+/*# sourceMappingURL=style.css.map */
